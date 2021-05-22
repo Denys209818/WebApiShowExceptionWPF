@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPF.ErrorService.ErrorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF.ErrorService"
+        mc:Ignorable="d"
+        Title="Помилка!!!" Height="250" Width="400" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style x:Key="labels" TargetType="Label">
+            <Setter Property="Foreground" Value="Red"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <WrapPanel HorizontalAlignment="Center">
+                <Label HorizontalAlignment="Center" Style="{DynamicResource labels}" Content="Код помилки:"/>
+                <Label HorizontalAlignment="Center" Content="{Binding Status}"/>
+            </WrapPanel>
+            <DataGrid CanUserAddRows="False" Name="dgError" VerticalScrollBarVisibility="Auto" Height="200" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Помилка" Foreground="Red" Width="*" Binding="{Binding Error}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>

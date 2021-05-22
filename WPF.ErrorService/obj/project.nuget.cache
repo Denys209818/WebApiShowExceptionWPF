@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BeAnCOwlJ0yYxy3jiPwGZGSdEfL6DvnCjpO97GTOrrxNxL3Qt9XBqQuAnCe6L3nfdZxpjcxxg4+cpHDKRKntrQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Denis\\Desktop\\WebAPI Lesson\\Lesson 3 (Exception)\\WebApiShowException\\WPF.ErrorService\\WPF.ErrorService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Denis\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
